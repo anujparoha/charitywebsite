@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(88, 3, 46);
+    
+
+}
+.nav{
+    margin:20px  60px;
+    background-color: rgb(220, 224, 191);
+    height: 30px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: sticky;
+    top: 0%;
+    width: 90%;
+    
+
+    
+
+}
+.nav ul {
+    text-decoration: none;
+    list-style: none;
+    display:  flex;
+    text-indent: 40px;
+    color: white;
+    padding: 14px;
+
+    
+}
+.nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    cursor: pointer;
+     
+}
+.nav ul li a:hover{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    cursor: pointer;
+    font-size:  17px;
+}
+.bigbox{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+   
+
+}
+.helpchild{
+    
+    padding: 10px;
+    border: 5px solid rgb(240, 245, 215);
+    display: flex;
+    flex-direction:row;
+}
+h1,h2,h3,h4{
+    margin: 10px;
+    padding: 40px;
+    border-radius: 60%;
+    background-color: rgb(231, 236, 203);
+ border: 5px solid rgb(20, 20, 20);
+ font-size: 24px;
+}
+.p1{
+    color: antiquewhite;
+    margin: 30px;
+    border: 3px solid black;
+    padding: 10px;
+    word-spacing: 10px;
+}
+ul{
+    color: aqua;
+}
+.u11{
+    margin: 60px;
+    font-size: 30px;
+}
+.p2{
+ font-size: 20px;
+ color: antiquewhite;
+ margin: 30px;
+ word-spacing: 12px;
+}
+.smallbox{
+    display: flex;
+    flex-direction: row;
+}
