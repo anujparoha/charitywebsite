@@ -1,0 +1,239 @@
+ .asp code
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head id="Head1" runat="server">  
+    <title></title>  
+    <style type="text/css">  
+    .cal  
+    {  
+        position:absolute;  
+        top:50px;  
+        left:150px;  
+        right:400px;  
+        height:500px;  
+        bottom:100px;  
+        background-color:Teal;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+    <div class="cal">  
+        <asp:Label ID="l" Text=" BASIC CALCULATOR" runat="server" Style="margin-left: 200px"  
+            Font-Bold="False" Font-Italic="False"></asp:Label>  
+        <asp:TextBox ID="t" runat="server" Style="margin-left: 100px; margin-top: 24px;"  
+            Width="335px" Height="41px"></asp:TextBox>  
+        <asp:Button ID="b1" Text="1" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b1_Click" />  
+        <asp:Button ID="b2" Text="2" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b2_Click" />  
+        <asp:Button ID="b3" Text="3" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b3_Click" />  
+        <asp:Button ID="add" Text="+" runat="server" Height="37px" Style="margin-left: 0px;  
+            margin-top: 0px;" Width="57px" OnClick="add_Click" />  
+        <asp:Button ID="b4" Text="4" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b4_Click" />  
+        <asp:Button ID="b5" Text="5" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b5_Click" />  
+        <asp:Button ID="b6" Text="6" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b6_Click" />  
+        <asp:Button ID="sub" Text="-" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="sub_Click" />  
+        <asp:Button ID="b7" Text="7" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b7_Click" />  
+        <asp:Button ID="b8" Text="8" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b8_Click" />  
+        <asp:Button ID="b9" Text="9" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b9_Click" />  
+        <asp:Button ID="mul" Text="*" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="mul_Click" />  
+        <asp:Button ID="b0" runat="server" Text="0" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="b0_Click" />  
+        <asp:Button ID="clr" runat="server" Text="CLR" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="clr_Click" />  
+        <asp:Button ID="eql" runat="server" Text="=" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="eql_Click" />  
+        <asp:Button ID="div" Text="/" runat="server" Height="37px" Style="margin-left: 0px"  
+            Width="57px" OnClick="div_Click" />  
+    </div>  
+    </form>  
+</body>  
+</html> 
+
+
+aspx.cs dcode
+
+using System;  
+using System.Collections.Generic;  
+using System.Linq;  
+using System.Web;  
+using System.Web.UI;  
+using System.Web.UI.WebControls;  
+public partial class _Default : System.Web.UI.Page  
+{  
+    static float a, c, d;  
+    static char b;  
+    protected void Page_Load(object sender, EventArgs e)  
+    {  
+    }  
+    protected void b1_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b1.Text;  
+        }  
+        else  
+            t.Text = t.Text + b1.Text;  
+    }  
+    protected void b2_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b2.Text;  
+        }  
+        else  
+            t.Text = t.Text + b2.Text;  
+    }  
+    protected void b3_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b3.Text;  
+        }  
+        else  
+            t.Text = t.Text + b3.Text;  
+    }  
+    protected void b4_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b4.Text;  
+        }  
+        else  
+            t.Text = t.Text + b4.Text;  
+    }  
+    protected void b5_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b5.Text;  
+        }  
+        else  
+            t.Text = t.Text + b5.Text;  
+    }  
+    protected void b6_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b6.Text;  
+        }  
+        else  
+            t.Text = t.Text + b5.Text;  
+    }  
+    protected void b7_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b7.Text;  
+        }  
+        else  
+            t.Text = t.Text + b7.Text;  
+    }  
+    protected void b8_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b8.Text;  
+        }  
+        else  
+            t.Text = t.Text + b8.Text;  
+    }  
+    protected void b9_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b9.Text;  
+        }  
+        else  
+            t.Text = t.Text + b9.Text;  
+    }  
+    protected void b0_Click(object sender, EventArgs e)  
+    {  
+        if ((t.Text == "+") || (t.Text == "-") || (t.Text == "*") || (t.Text == "/"))  
+        {  
+            t.Text = "";  
+            t.Text = t.Text + b0.Text;  
+        }  
+        else  
+            t.Text = t.Text + b0.Text;  
+    }  
+    protected void add_Click(object sender, EventArgs e)  
+    {  
+        a = Convert.ToInt32(t.Text);  
+        t.Text = "";  
+        b = '+';  
+        t.Text += b;  
+    }  
+    protected void sub_Click(object sender, EventArgs e)  
+    {  
+        a = Convert.ToInt32(t.Text);  
+        t.Text = "";  
+        b = '-';  
+        t.Text += b;  
+    }  
+    protected void mul_Click(object sender, EventArgs e)  
+    {  
+        a = Convert.ToInt32(t.Text);  
+        t.Text = "";  
+        b = '*';  
+        t.Text += b;  
+    }  
+    protected void div_Click(object sender, EventArgs e)  
+    {  
+        a = Convert.ToInt32(t.Text);  
+        t.Text = "";  
+        b = '/';  
+        t.Text += b;  
+    }  
+    protected void eql_Click(object sender, EventArgs e)  
+    {  
+        c = Convert.ToInt32(t.Text);  
+        t.Text = "";  
+        if (b == '/')  
+        {  
+            d = a / c;  
+            t.Text += d;  
+            a = d;  
+        }  
+        else if (b == '+')  
+        {  
+            d = a + c;  
+            t.Text += d;  
+            a = d;  
+        }  
+        else if (b == '-')  
+        {  
+            d = a - c;  
+            t.Text += d;  
+            a = d;  
+        }  
+        else  
+        {  
+            d = a * c;  
+            t.Text += d;  
+            a = d;  
+        }  
+    }  
+    protected void clr_Click(object sender, EventArgs e)  
+    {  
+        t.Text = "";  
+    }  
+} 
