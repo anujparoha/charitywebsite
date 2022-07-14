@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="calculator.css">
+
+    <title>Calculor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>calculator</h1>
+
+<div class="calculator">
+    <input type="text" name="display" id screen>
+
+<table>
+<tr>
+    <td><button>(</button></td>
+    <td><button>)</button></td>
+    <td><button>C</button></td>
+    <td><button>%</button></td>
+   
+</tr>
+<tr>
+    <td><button>7</button></td>
+    <td><button>8</button></td>
+    <td><button>9</button></td>
+    <td><button>X</button></td>
+   
+</tr>
+<tr>
+    <td><button>4</button></td>
+    <td><button>5</button></td>
+    <td><button>6</button></td>
+    <td><button>+</button></td>
+   
+</tr>
+<tr>
+    <td><button>3</button></td>
+    <td><button>2</button></td>
+    <td><button>1</button></td>
+    <td><button>-</button></td>
+   
+</tr>
+<tr>
+    <td><button>0</button></td>
+    <td><button>.</button></td>
+    <td><button>/</button></td>
+    <td><button>=</button></td>
+   
+</tr>
+</table>
+
+</div>
+    </div>
+    
+</body>
+<script src="calculator.js"></script>
+</html>
+
+
+css
+
+.container{
+text-align: center;
+margin: auto;
+}
+table {
+    margin: auto;
+}
+input{
+    font-size: 39px;
+    border-radius: 100px;
+    border: 5px solid black;
+}
+button{
+    font-size: 35px;
+    background-color: rgb(112, 87, 93);
+    margin: 5px 3px;
+    height: 59px;
+    width: 102px;
+    color: rgb(1, 16, 24);
+    border-radius: 20px;
+}
+.calculator {
+    padding: 30px;
+    display: inline-block;
+    background-image: linear-gradient( to bottom,rgb(177, 38, 135),rgb(236, 174, 184));
+  border-radius: 30px;
+
+}
+h1{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 3px  solid transparent;
+    border-image: linear-gradient(to right , rgb(16, 141, 243),rgb(21, 241, 21));
+    border-image-slice: 1;
+    color: rgb(19, 90, 90);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:900;
+    justify-content: center;
+   background-image: linear-gradient(  to right, rgb(95, 228, 113),rgb(241, 172, 172));
+
+ 
+
+}
